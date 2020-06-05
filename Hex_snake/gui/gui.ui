@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SnakeGame</class>
+ <widget class="QWidget" name="SnakeGame">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>623</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="btn_pause">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>40</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Unpause game</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_restart">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>80</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Restart game</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_exit">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>120</y>
+     <width>151</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Exit game</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="board_gBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>581</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string/>
+   </property>
+   <widget class="QTextEdit" name="board_text">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>561</width>
+      <height>581</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="p1_gBox">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>290</y>
+     <width>151</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Player 1</string>
+   </property>
+   <widget class="QGroupBox" name="p1_c_gBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>120</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Controls</string>
+    </property>
+    <widget class="QLineEdit" name="p1_controls_textbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>q, w, e, a, s, d</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="_p_gBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>120</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Points</string>
+    </property>
+    <widget class="QLineEdit" name="p1_points_textbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="p2_gBox">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>440</y>
+     <width>151</width>
+     <height>131</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Player 2</string>
+   </property>
+   <widget class="QGroupBox" name="p2_c_gBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>120</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Controls</string>
+    </property>
+    <widget class="QLineEdit" name="p2_controls_textbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>u, i, o, j, k, l</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="p2_p_gBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>120</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Points</string>
+    </property>
+    <widget class="QLineEdit" name="p2_points_textbox">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>101</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="game_state_gBox">
+   <property name="geometry">
+    <rect>
+     <x>610</x>
+     <y>170</y>
+     <width>151</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Game state</string>
+   </property>
+   <widget class="QTextEdit" name="game_state_textbox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>131</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="readOnly">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>600</x>
+     <y>260</y>
+     <width>171</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="Line" name="line_2">
+   <property name="geometry">
+    <rect>
+     <x>583</x>
+     <y>10</y>
+     <width>41</width>
+     <height>601</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Vertical</enum>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

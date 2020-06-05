@@ -1,0 +1,22 @@
+<RCC>
+    <qresource>
+        <file>images/empty_tile.png</file>
+        <file>images/fruits/apple_tile.png</file>
+        <file>images/fruits/cherry_tile.png</file>
+        <file>images/fruits/pear_tile.png</file>
+        <file>images/snake_blue/snake_blue_tile.png</file>
+        <file>images/snake_blue/snake_blue_head_dir0.png</file>
+        <file>images/snake_blue/snake_blue_head_dir1.png</file>
+        <file>images/snake_blue/snake_blue_head_dir2.png</file>
+        <file>images/snake_blue/snake_blue_head_dir3.png</file>
+        <file>images/snake_blue/snake_blue_head_dir4.png</file>
+        <file>images/snake_blue/snake_blue_head_dir5.png</file>
+        <file>images/snake_pink/snake_pink_tile.png</file>
+        <file>images/snake_pink/snake_pink_head_dir0.png</file>
+        <file>images/snake_pink/snake_pink_head_dir1.png</file>
+        <file>images/snake_pink/snake_pink_head_dir2.png</file>
+        <file>images/snake_pink/snake_pink_head_dir3.png</file>
+        <file>images/snake_pink/snake_pink_head_dir4.png</file>
+        <file>images/snake_pink/snake_pink_head_dir5.png</file>
+    </qresource>
+</RCC>
